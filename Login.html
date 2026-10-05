@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Huellitas Felices · Ingresar</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="barra">
+  <div class="contenedor">
+    <a href="index.html" class="logo"><span></span>Huellitas Felices</a>
+    <nav class="menu">
+      <a href="index.html">Catálogo</a>
+      <a href="cuenta.html">Mi cuenta</a>
+      <a href="admin.html">Panel fundación</a>
+      <a href="sistema.html">Administración</a>
+    </nav>
+    <a href="login.html" class="btn btn-borde">Ingresar</a>
+  </div>
+</header>
+
+<section class="contenedor">
+  <p class="saludo">Bienvenido a Huellitas Felices</p>
+  <div class="doble">
+
+    <form class="formulario" id="ingreso" action="cuenta.html">
+      <h2>Iniciar sesión</h2>
+      <div class="campo"><label for="lc">Correo electrónico</label><input type="email" id="lc" required></div>
+      <div class="campo"><label for="lp">Contraseña</label><input type="password" id="lp" required></div>
+      <button class="btn" type="submit">Ingresar</button>
+    </form>
+
+    <form class="formulario" id="registro" action="login.html#ingreso">
+      <h2>Crear cuenta</h2>
+      <div class="campo"><label for="rt">Tipo de cuenta</label>
+        <select id="rt"><option>Adoptante</option><option>Fundación / Refugio</option></select></div>
+      <div class="campo"><label for="rn">Nombre completo (o de la fundación)</label><input type="text" id="rn" required></div>
+      <div class="campo"><label for="rc">Correo electrónico</label><input type="email" id="rc" required></div>
+      <div class="campo"><label for="ri">Número de identificación</label><input type="text" id="ri" required></div>
+      <div class="campo"><label for="rtel">Teléfono</label><input type="tel" id="rtel" required></div>
+      <div class="campo"><label for="rp">Contraseña (mínimo 6 caracteres)</label><input type="password" id="rp" minlength="6" required></div>
+      <label style="font-weight:400"><input type="checkbox" required style="width:auto"> Acepto el tratamiento de mis datos personales (Ley 1581 de 2012)</label>
+      <p class="nota">Las fundaciones deben ser validadas por el administrador antes de publicar mascotas.</p><br>
+      <button class="btn" type="submit">Crear cuenta</button>
+    </form>
+
+  </div>
+</section>
+
+<footer>
+  <div class="contenedor">
+    <span>© 2026 Huellitas Felices</span>
+    <span>Contacto · Privacidad · Ayuda</span>
+  </div>
+</footer>
+
+</body>
+</html>

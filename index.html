@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Huellitas Felices · Catálogo de mascotas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="barra">
+  <div class="contenedor">
+    <a href="index.html" class="logo"><span></span>Huellitas Felices</a>
+    <nav class="menu">
+      <a href="index.html" class="activo">Catálogo</a>
+      <a href="cuenta.html">Mi cuenta</a>
+      <a href="admin.html">Panel fundación</a>
+      <a href="sistema.html">Administración</a>
+    </nav>
+    <a href="login.html" class="btn">Ingresar</a>
+  </div>
+</header>
+
+<div class="portada">
+  <h1>Encuentra a tu nuevo mejor amigo</h1>
+  <p>Mascotas de fundaciones y refugios esperando un hogar</p>
+  <a href="#mascotas" class="btn">Ver mascotas</a>
+</div>
+
+<div class="contenedor">
+  <div class="filtros">
+    <select id="fe"><option value="">Especie</option><option value="Perro">Perro</option><option value="Gato">Gato</option></select>
+    <select id="fr"><option value="">Raza</option><option>Mestiza</option><option>Criollo</option><option>Criolla</option><option>Labrador</option><option>Siamesa</option><option>Pastor</option></select>
+    <select id="fa"><option value="">Edad</option><option>Cachorro</option><option>Adulto</option></select>
+    <select id="ft"><option value="">Tamaño</option><option>Pequeño</option><option>Mediano</option><option>Grande</option></select>
+    <select id="fu"><option value="">Ubicación</option><option>Bogotá</option><option>Medellín</option><option>Cali</option><option>Bucaramanga</option><option>Cartagena</option></select>
+  </div>
+</div>
+
+<section class="contenedor" id="mascotas">
+  <h2>Mascotas disponibles</h2>
+  <div class="rejilla">
+    <article class="tarjeta" data-e="Perro" data-r="Mestiza" data-a="Adulto" data-t="Mediano" data-c="Bogotá">
+      <div class="foto perro">PERRO</div>
+      <div class="datos">
+        <h3>Luna · mestiza</h3>
+        <p class="meta">2 años · Bogotá · tamaño mediano</p>
+        <a href="mascota.html#luna" class="btn btn-bloque">Adoptar</a>
+      </div>
+    </article>
+
+    <article class="tarjeta" data-e="Gato" data-r="Criollo" data-a="Cachorro" data-t="Pequeño" data-c="Medellín">
+      <div class="foto gato">GATO</div>
+      <div class="datos">
+        <h3>Michi · criollo</h3>
+        <p class="meta">1 año · Medellín · tamaño pequeño</p>
+        <a href="mascota.html#michi" class="btn btn-bloque">Adoptar</a>
+      </div>
+    </article>
+
+    <article class="tarjeta" data-e="Perro" data-r="Labrador" data-a="Adulto" data-t="Grande" data-c="Cali">
+      <div class="foto perro2">PERRO</div>
+      <div class="datos">
+        <h3>Toby · labrador</h3>
+        <p class="meta">3 años · Cali · tamaño grande</p>
+        <a href="mascota.html#toby" class="btn btn-bloque">Adoptar</a>
+      </div>
+    </article>
+
+    <article class="tarjeta" data-e="Gato" data-r="Siamesa" data-a="Adulto" data-t="Pequeño" data-c="Bogotá">
+      <div class="foto gato">GATO</div>
+      <div class="datos">
+        <h3>Nina · siamesa</h3>
+        <p class="meta">2 años · Bogotá · tamaño pequeño</p>
+        <a href="mascota.html#nina" class="btn btn-bloque">Adoptar</a>
+      </div>
+    </article>
+
+    <article class="tarjeta" data-e="Perro" data-r="Pastor" data-a="Adulto" data-t="Grande" data-c="Bucaramanga">
+      <div class="foto perro">PERRO</div>
+      <div class="datos">
+        <h3>Rocky · pastor</h3>
+        <p class="meta">4 años · Bucaramanga · tamaño grande</p>
+        <a href="mascota.html#rocky" class="btn btn-bloque">Adoptar</a>
+      </div>
+    </article>
+
+    <article class="tarjeta" data-e="Perro" data-r="Criolla" data-a="Cachorro" data-t="Mediano" data-c="Cartagena">
+      <div class="foto perro2">PERRO</div>
+      <div class="datos">
+        <h3>Kira · criolla</h3>
+        <p class="meta">1 año · Cartagena · tamaño mediano</p>
+        <a href="mascota.html#kira" class="btn btn-bloque">Adoptar</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="contenedor nosotros" id="nosotros">
+  <h2>Nosotros</h2>
+  <p>Huellitas Felices conecta fundaciones y refugios con personas que quieren adoptar, de forma transparente y centralizada.</p>
+</section>
+
+<div class="llamado" id="fundaciones">
+  <p>¿Tienes una fundación o refugio?</p>
+  <a href="login.html#registro" class="btn btn-ambar">Registrar mi fundación</a>
+</div>
+
+<footer>
+  <div class="contenedor">
+    <span>© 2026 Huellitas Felices</span>
+    <span>Contacto · Privacidad · Ayuda</span>
+  </div>
+</footer>
+
+</body>
+</html>
